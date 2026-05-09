@@ -62,6 +62,13 @@ Do not use it to collect information that you are not allowed to use. If a site 
 - Local-only import/export of parser settings.
 - Better accessibility testing across Chrome versions.
 
+## Support
+
+If you find this project useful, please consider starring the repository.  
+It helps support the project and shows employers/other developers that the work is useful.
+
+You are free to fork the project for learning purposes. Please keep the license and attribution intact.
+
 ## License
 
 MIT License. See [LICENSE](LICENSE).
