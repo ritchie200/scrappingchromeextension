@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Visible Contact Name Extractor",
+  "short_name": "Name Extractor",
+  "version": "0.1.0",
+  "author": "Ritchie Fernandes",
+  "description": "Find likely person names from visible text on the current page after a manual scan.",
+  "minimum_chrome_version": "102",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Scan visible names"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ]
+}

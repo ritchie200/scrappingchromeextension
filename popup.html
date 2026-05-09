@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visible Contact Name Extractor</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app" aria-labelledby="app-title">
+      <header class="header">
+        <div>
+          <h1 id="app-title">Visible Names</h1>
+          <p class="subtitle">Manual scan of the current page.</p>
+        </div>
+        <span class="count-badge" id="countBadge" aria-label="Result count">0</span>
+      </header>
+
+      <p class="notice">
+        Only visible page text is scanned. Follow website terms and privacy rules.
+      </p>
+
+      <section class="toolbar" aria-label="Actions">
+        <button class="primary" id="scanButton" type="button">Scan Page</button>
+        <button id="copyButton" type="button" disabled>Copy Selected</button>
+        <button id="exportButton" type="button" disabled>Export CSV</button>
+        <button class="ghost" id="clearButton" type="button" disabled>Clear</button>
+      </section>
+
+      <p class="status" id="statusMessage" role="status" aria-live="polite">
+        Ready to scan.
+      </p>
+
+      <section class="results" aria-label="Detected names">
+        <ul class="results-list" id="resultsList"></ul>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
